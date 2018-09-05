@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+  >
+
+
+    <RelativeLayout
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:textSize="18sp"
+            android:layout_centerInParent="true"
+            android:textColor="#fff"
+            android:text="服务大厅"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="127dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/ivyouka"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitXY"
+            android:layout_width="345dp"
+            android:layout_height="127dp"
+            android:src="@drawable/dating1"
+            />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/youkafuwu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center_vertical"
+            android:text="油卡服务"
+            android:textColor="#fff"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="127dp"
+        android:layout_marginTop="10dp"
+        >
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/dating2"
+            android:layout_width="345dp"
+            android:layout_height="127dp" />
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/etcfuwu"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="50dp"
+            android:textSize="22sp"
+            android:textColor="#fff"
+            android:gravity="center_vertical"
+            android:text="ETC服务"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>

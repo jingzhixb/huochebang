@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="350dp"
+            android:layout_height="50dp">
+
+            <RelativeLayout
+                android:id="@+id/root3"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/xuanze_shape"
+                android:layout_width="95dp"
+                android:layout_height="30dp">
+                <TextView
+                    android:id="@+id/startcity"
+                    android:paddingLeft="10dp"
+                    android:textColor="#fff"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="不限"
+                    />
+                <LinearLayout
+                    android:id="@+id/three_ll3"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp">
+                    <ImageView
+                        android:id="@+id/arrow3"
+                        android:layout_marginTop="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/pull_down"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrive"/>
+            <RelativeLayout
+                android:id="@+id/root2"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/xuanze_shape"
+                android:layout_width="95dp"
+                android:layout_height="30dp">
+                <TextView
+                    android:id="@+id/endcity"
+                    android:paddingLeft="10dp"
+                    android:textColor="#fff"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="不限"
+                    />
+                <LinearLayout
+                    android:id="@+id/three_lll"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp">
+                    <ImageView
+                        android:id="@+id/arrow2"
+                        android:layout_marginTop="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/pull_down"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/root"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/xuanze_shape"
+                android:layout_width="95dp"
+                android:layout_height="30dp">
+                <TextView
+                    android:id="@+id/title"
+                    android:paddingLeft="10dp"
+                    android:textColor="#fff"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="定制搜索"
+                    />
+                <LinearLayout
+                    android:id="@+id/three_ll"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp">
+                    <ImageView
+                        android:id="@+id/arrow"
+                        android:layout_marginTop="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/pull_down"/>
+
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/smartRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlEnablePreviewInEditMode="false">
+
+        <com.scwang.smartrefresh.layout.header.ClassicsHeader
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></com.scwang.smartrefresh.layout.header.ClassicsHeader>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/dading_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+        <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+            android:id="@+id/footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></com.scwang.smartrefresh.layout.footer.ClassicsFooter>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</LinearLayout>

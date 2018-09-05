@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:id="@+id/tou2"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/tou"
+        android:layout_marginTop="50dp"
+        android:layout_width="232dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="#333"
+            android:textSize="13sp"
+            android:background="@null"
+            android:hint="姓名"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:textColor="#ccc"
+            android:textSize="13sp"
+            android:gravity="start"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:id="@+id/name"
+            android:hint="输入姓名"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tou3"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tou2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:background="#ddd"
+            android:layout_centerInParent="true"
+            android:drawableLeft="@drawable/me"
+            android:layout_width="232dp"
+            android:layout_height="1dp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/tou4"
+        android:layout_width="232dp"
+        android:layout_height="74dp"
+        android:layout_below="@+id/tou3"
+        android:layout_centerInParent="true"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:hint="个人照片"
+            android:textColor="#333"
+            android:textSize="13sp" />
+
+        <com.zhuye.huochebangsiji.widget.RoundedCornerImageView
+            android:id="@+id/touxiang"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/head" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tou5"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tou4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:background="#ddd"
+            android:layout_centerInParent="true"
+            android:drawableLeft="@drawable/me"
+            android:layout_width="232dp"
+            android:layout_height="1dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tou6"
+        android:layout_below="@+id/tou5"
+        android:layout_width="232dp"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/shen"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="身份证"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="36dp"
+            android:layout_below="@+id/shen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/shenfenzhen"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/front"
+                    android:scaleType="centerCrop"
+                    android:layout_width="100dp"
+                    android:layout_height="79dp" />
+                <TextView
+                    android:textColor="#666"
+                    android:textSize="12sp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="上传身份证正面"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/shenfenfan"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/fanmian"
+                    android:scaleType="centerCrop"
+                    android:layout_width="100dp"
+                    android:layout_height="79dp" />
+                <TextView
+                    android:layout_marginLeft="3dp"
+                    android:textColor="#666"
+                    android:textSize="12sp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="上传身份证反面"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tou7"
+        android:layout_marginTop="11dp"
+        android:layout_below="@+id/tou6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:background="#ddd"
+            android:layout_centerInParent="true"
+            android:drawableLeft="@drawable/me"
+            android:layout_width="232dp"
+            android:layout_height="1dp" />
+    </RelativeLayout>
+
+
+</LinearLayout>

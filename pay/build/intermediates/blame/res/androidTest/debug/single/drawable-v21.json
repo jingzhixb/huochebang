@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "E:\\Youxun\\huochebang\\pay\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-v21\\abc_btn_colored_material.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\11dd66360f14979664ed3655388a2147\\res\\drawable-v21\\abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "E:\\Youxun\\huochebang\\pay\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-v21\\notification_action_background.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\9e3e954ce74ad1a629086536fb6a0f3e\\res\\drawable-v21\\notification_action_background.xml"
+    },
+    {
+        "merged": "E:\\Youxun\\huochebang\\pay\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-v21\\abc_action_bar_item_background_material.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\11dd66360f14979664ed3655388a2147\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
+    },
+    {
+        "merged": "E:\\Youxun\\huochebang\\pay\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-v21\\abc_edit_text_material.xml",
+        "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\11dd66360f14979664ed3655388a2147\\res\\drawable-v21\\abc_edit_text_material.xml"
+    }
+]

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/tou"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary">
+        <ImageView
+            android:scaleType="centerInside"
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="10dp"
+            android:text="缴纳保证金"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+
+
+
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/yunfei1"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:background="@null"
+                    android:hint="金额"
+                    android:textSize="16sp"
+                    android:textColorHint="#333"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:singleLine="true"
+                    android:lines="1"
+                    android:layout_toRightOf="@+id/yunfei1"
+                    android:id="@+id/jine"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:background="@null"
+                    android:hint="金额"
+                    android:textSize="16sp"
+                    android:textColorHint="#ccc"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textSize="16sp"
+                    android:text="100     元"
+                    android:textColor="#e60012"
+                    android:src="@drawable/go_in"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical|end"
+                    android:layout_marginRight="18dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginLeft="16dp"
+                    android:hint="请选择支付方式"
+                    android:textSize="16sp"
+                    android:textColorHint="#333"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/alipay"
+                    android:id="@+id/zhifubao"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginTop="9dp"
+                    android:layout_toRightOf="@+id/zhifubao"
+                    android:layout_marginLeft="16dp"
+                    android:hint="请选择支付方式"
+                    android:textSize="16sp"
+                    android:textColorHint="#333"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_marginTop="7dp"
+                    android:id="@+id/fabuaio"
+                    android:src="@drawable/on"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical|end"
+                    android:layout_marginRight="18dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:scaleType="centerCrop"
+            android:src="@drawable/wechatpay"
+            android:id="@+id/wechat"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="9dp"
+            android:layout_toRightOf="@+id/wechat"
+            android:layout_marginLeft="16dp"
+            android:hint="请选择支付方式"
+            android:textSize="16sp"
+            android:textColorHint="#333"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_marginTop="7dp"
+            android:src="@drawable/off"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical|end"
+            android:layout_marginRight="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="43dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_centerInParent="true"
+            android:background="@drawable/queding_shape"
+            android:id="@+id/fabu"
+            android:text="发布"
+            android:layout_width="345dp"
+            android:layout_height="44dp"
+            android:textSize="16sp"
+            android:textColor="#fff"/>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

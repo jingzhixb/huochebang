@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="349dp"
+    android:background="#3a33">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/tou">
+        <TextView
+            android:layout_centerInParent="true"
+            android:textColor="#333"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择车辆"/>
+        
+        <ImageView
+            android:id="@+id/guanbi"
+            android:src="@drawable/close"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="18dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/selectcar"
+        android:layout_marginBottom="95dp"
+        android:layout_below="@+id/tou"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+    </android.support.v7.widget.RecyclerView>
+    
+   <RelativeLayout
+       android:layout_marginBottom="15dp"
+       android:layout_alignParentBottom="true"
+       android:layout_width="match_parent"
+       android:layout_height="40dp">
+
+       <Button
+           android:id="@+id/queding"
+           android:background="@drawable/queding_shape"
+           android:textSize="14sp"
+           android:textColor="#fff"
+           android:text="确定"
+           android:layout_centerInParent="true"
+           android:layout_width="345dp"
+           android:layout_height="40dp" />
+   </RelativeLayout>
+</RelativeLayout>

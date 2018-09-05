@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="352dp"
+    android:layout_height="112dp"
+    android:id="@+id/root"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/bank1">
+
+    <TextView
+        android:gravity="center_vertical"
+        android:id="@+id/name"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="40dp"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:text="工商银行"
+        android:layout_width="180dp"
+        android:layout_height="20dp" />
+    <TextView
+        android:visibility="gone"
+        android:gravity="center_vertical"
+        android:id="@+id/type"
+        android:layout_toRightOf="@+id/name"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#fff"
+        android:textSize="12sp"
+        android:text="工商银行"
+        android:layout_width="80dp"
+        android:layout_height="20dp" />
+    <TextView
+        android:id="@+id/hao"
+        android:layout_marginTop="60sp"
+        android:layout_marginLeft="40dp"
+        android:textColor="#fff"
+        android:textSize="26sp"
+        android:text="工商银行"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/moren"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/choice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

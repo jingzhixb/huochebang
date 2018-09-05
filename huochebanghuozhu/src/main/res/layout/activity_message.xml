@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/tou"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary">
+        <ImageView
+            android:scaleType="centerInside"
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="10dp"
+            android:text="消息"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/xitongmessage"
+
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="11dp"
+        android:layout_width="match_parent"
+        android:layout_height="62dp">
+        
+        
+        <ImageView
+            android:layout_marginTop="@dimen/dp_10"
+            android:id="@+id/image1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/push"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:layout_marginTop="@dimen/dp_10"
+            android:id="@+id/tv1"
+            android:textColor="#666"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@+id/image1"
+            android:text="系统消息"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+
+            android:visibility="gone"
+           android:id="@+id/xitongnum"
+            android:textColor="#ccff0000"
+            android:layout_marginLeft="30dp"
+            android:text="15"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/liuyanmessage"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="11dp"
+        android:layout_width="match_parent"
+        android:layout_height="62dp">
+
+
+        <ImageView
+            android:layout_marginTop="@dimen/dp_10"
+            android:id="@+id/image2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/message"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:layout_marginTop="@dimen/dp_10"
+            android:id="@+id/tv2"
+            android:textColor="#666"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@+id/image2"
+            android:text="留言消息"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/liuyannum"
+            android:textColor="#ccff0000"
+            android:layout_marginLeft="30dp"
+            android:text="20"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</LinearLayout>

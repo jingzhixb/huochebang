@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/tab_view"
+        android:layout_width="21dp"
+        android:layout_height="21dp" />
+
+    <TextView
+        android:gravity="center"
+        android:layout_below="@+id/tab_view"
+        android:text="有货啦货"
+        android:lines="1"
+        android:textSize="12sp"
+        android:textColor="@color/home_color_select"
+        android:id="@+id/tab_tv"
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+
+
+
+    <TextView
+        android:layout_marginRight="8dp"
+        android:textSize="@dimen/sp_12"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/agree_shape_c"
+        android:id="@+id/messages"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:text="1"/>
+
+</RelativeLayout>

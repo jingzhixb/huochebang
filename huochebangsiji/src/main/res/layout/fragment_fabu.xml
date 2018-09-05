@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="350dp"
+            android:layout_height="50dp">
+
+
+            <RelativeLayout
+                android:gravity="center"
+                android:layout_width="45dp"
+                android:layout_height="30dp">
+                <TextView
+                    android:id="@+id/location"
+                    android:textColor="#fff"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:id="@+id/iv_location"
+                    android:src="@drawable/things_place"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <org.angmarch.views.NiceSpinner
+                android:singleLine="true"
+                android:lines="1"
+                android:id="@+id/haha"
+                android:layout_width="95dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:background="#00ff0000"
+                android:gravity="start|top"
+                android:paddingLeft="120dp"
+                android:textColor="#fff"
+                android:textSize="12sp"
+                app:arrowTint="#fff"
+                app:paddingStart="6dp" />
+
+            <ImageView
+                android:visibility="gone"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrive"/>
+
+            <org.angmarch.views.NiceSpinner
+                android:layout_marginLeft="10dp"
+                android:id="@+id/haha1"
+                android:layout_width="95dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:background="#00ff0000"
+                android:gravity="start|top"
+                android:paddingLeft="120dp"
+                android:textColor="#fff"
+                android:textSize="12sp"
+                app:arrowTint="#fff"
+                app:paddingStart="6dp" />
+
+            <RelativeLayout
+                android:id="@+id/root"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/xuanze_shape"
+                android:layout_width="95dp"
+                android:layout_height="30dp">
+                <TextView
+                    android:id="@+id/title"
+                    android:paddingLeft="10dp"
+                    android:textColor="#fff"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="定制搜索"
+                    />
+                <LinearLayout
+                    android:id="@+id/three_ll"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp">
+                    <ImageView
+                        android:id="@+id/arrow"
+                        android:layout_marginTop="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/pull_down"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+            <!--<com.zhuye.huochebangsiji.widget.MySpinner-->
+                <!--android:layout_marginLeft="16dp"-->
+                <!--android:paddingLeft="120dp"-->
+                <!--android:textColor="#fff"-->
+                <!--android:gravity="start|top"-->
+                <!--android:textSize="12sp"-->
+                <!--app:paddingStart="6dp"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--app:arrowTint="#fff"-->
+                <!--android:background="#00ff0000"-->
+                <!--android:id="@+id/haha2"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="30dp" />-->
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlEnablePreviewInEditMode="false"
+        android:id="@+id/smartRefreshLayout">
+
+        <com.scwang.smartrefresh.layout.header.ClassicsHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/header"></com.scwang.smartrefresh.layout.header.ClassicsHeader>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/dading_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
+
+        <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/footer"></com.scwang.smartrefresh.layout.footer.ClassicsFooter>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</LinearLayout>

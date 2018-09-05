@@ -1,0 +1,81 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.2"
+
+    signingConfigs {
+        //bug
+        release {
+            storeFile file("D:\\apps\\hougong.jks")
+            storePassword "hougong123"
+            keyAlias "hougong"
+            keyPassword "hougong123"
+        }
+    }
+
+    defaultConfig {
+        applicationId "com.zhuye.huochebang"
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 2
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            signingConfig signingConfigs.release
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ["libs"]
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    //rxjava
+
+    //retrofit
+    configurations.all {
+        resolutionStrategy.force 'com.android.support:support-annotations:26.+'
+    }
+    compile files('libs/jcore-android-1.1.9.jar')
+    compile files('libs/jpush-android-3.1.1.jar')
+    compile 'com.shawnlin:number-picker:2.4.4'
+    compile 'com.android.support:appcompat-v7:26.+'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.jakewharton:butterknife:8.8.1'
+    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    compile 'io.reactivex.rxjava2:rxjava:2.1.7'
+    compile 'com.squareup.retrofit2:retrofit:2.3.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava2:2.2.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.0.0-beta4'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.5.0'
+    compile 'com.google.code.gson:gson:2.8.2'
+    compile 'me.iwf.photopicker:PhotoPicker:0.9.12@aar'
+    compile 'com.android.support:recyclerview-v7:26.+'
+    compile 'com.github.bumptech.glide:glide:4.1.1'
+    compile 'com.android.support:design:26.+'
+    compile 'com.lzy.net:okgo:3.0.4'
+    compile 'org.greenrobot:eventbus:3.1.1'
+    compile 'com.yuyh.bankcardformat:library:1.0.2'
+    compile 'com.jcodecraeer:xrecyclerview:1.5.7'
+    testCompile 'junit:junit:4.12'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    compile 'com.carson_ho:SearchLayout:1.0.1'
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.30'
+    compile 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.4-7'
+}

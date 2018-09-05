@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1db0f3</color>
+    <color name="colorPrimaryDark">#1db0f3</color>
+    <color name="colorAccent">#999</color>
+
+    <color name="line_color">#dedede</color>
+    <color name="white">#fff</color>
+    <color name="translate">#000000</color>
+    <color name="dindansel">#0ba8ef</color>
+    <color name="dindansnor">#999</color>
+    <color name="alpha_80_black">#CC000000</color>
+</resources>

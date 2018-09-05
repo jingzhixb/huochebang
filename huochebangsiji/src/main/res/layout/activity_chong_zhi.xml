@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/tou"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary">
+        <ImageView
+            android:scaleType="centerInside"
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="10dp"
+            android:text="充值"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:gravity="center_vertical"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:background="@null"
+            android:text="提现金额"
+            android:textSize="14sp"
+            android:textColor="#666"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/bank"
+            android:layout_toLeftOf="@+id/go"
+            android:gravity="center_vertical"
+            android:layout_marginRight="12dp"
+            android:background="@null"
+            android:text="提现账号"
+            android:textSize="14sp"
+            android:textColor="#666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:visibility="gone"
+            android:src="@drawable/go_in"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical|end"
+            android:layout_marginRight="18dp"
+            android:id="@+id/go"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="15dp"
+        android:background="@null"
+        android:hint="充值金额"
+        android:textSize="14sp"
+        android:textColorHint="#666"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:visibility="gone"
+            android:background="@null"
+            android:textColor="#666"
+            android:layout_marginTop="35dp"
+            android:textSize="14sp"
+            android:text="¥"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:inputType="numberDecimal"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:textColor="#666"
+            android:id="@+id/jine"
+            android:layout_marginTop="15dp"
+            android:textSize="30sp"
+            android:hint="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="15dp"
+        android:background="@null"
+        android:hint="油卡名称"
+        android:textSize="18sp"
+        android:textColorHint="#333"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/name"
+            android:textColor="#666"
+            android:textSize="18sp"
+            android:text="中国石化"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_below="@+id/name"
+            android:id="@+id/kahao"
+            android:textColor="#999"
+            android:layout_marginTop="16dp"
+            android:textSize="14sp"
+            android:text="卡号:147844514554113"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/edit"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/go_in"/>
+    </RelativeLayout>
+
+
+    <View
+        android:background="#eee"
+        android:layout_width="match_parent"
+        android:layout_height="11dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="10dp"></View>
+
+
+    <TextView
+        android:gravity="center_vertical"
+        android:layout_marginLeft="15dp"
+        android:background="@null"
+        android:hint="请选择支付方式"
+        android:textSize="15sp"
+        android:textColorHint="#333"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <RelativeLayout
+        android:id="@+id/yuechongzhi"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:id="@+id/wechat2"
+            android:scaleType="centerCrop"
+            android:src="@drawable/balance"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+        <TextView
+            android:id="@+id/wodeyue"
+            android:layout_marginLeft="9dp"
+            android:layout_toRightOf="@+id/wechat2"
+            android:gravity="center_vertical"
+            android:hint="余额充值"
+            android:textSize="16sp"
+            android:textColorHint="#333"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="18dp"
+            android:id="@+id/yuechongzhi2"
+            android:scaleType="centerCrop"
+            android:src="@drawable/on"
+            android:layout_alignParentRight="true"
+            android:layout_width="26dp"
+            android:layout_height="26dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/zhifubao"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="13dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:id="@+id/aliimg"
+            android:scaleType="centerCrop"
+            android:src="@drawable/alipay"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+        <TextView
+            android:layout_marginLeft="9dp"
+            android:layout_toRightOf="@+id/aliimg"
+            android:gravity="center_vertical"
+            android:hint="支付宝"
+            android:textSize="16sp"
+            android:textColorHint="#333"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:layout_marginRight="18dp"
+            android:id="@+id/aliimgcjoice"
+            android:scaleType="centerCrop"
+            android:src="@drawable/off"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_alignTop="@+id/aliimg"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/weixin"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:id="@+id/wechat"
+            android:scaleType="centerCrop"
+            android:src="@drawable/wechatpay"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+        <TextView
+            android:layout_marginLeft="9dp"
+            android:layout_toRightOf="@+id/wechat"
+            android:gravity="center_vertical"
+            android:hint="微信"
+            android:textSize="16sp"
+            android:textColorHint="#333"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="18dp"
+            android:id="@+id/wechatcjoice"
+            android:scaleType="centerCrop"
+            android:src="@drawable/off"
+            android:layout_alignParentRight="true"
+            android:layout_width="26dp"
+            android:layout_height="26dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tou9"
+        android:layout_marginTop="15dp">
+
+        <Button
+            android:layout_marginBottom="5dp"
+            android:id="@+id/chongzhi"
+            android:layout_width="345dp"
+            android:layout_height="44dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/tixian_shape"
+            android:text="确认充值"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+    </RelativeLayout>
+</LinearLayout>

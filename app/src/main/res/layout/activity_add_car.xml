@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zhuye.huochebang.ui.Regeist1Activity">
+
+
+    <RelativeLayout
+        android:id="@+id/tou"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:scaleType="centerInside"
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="10dp"
+            android:text="新增车辆"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_marginTop="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="49dp">
+        <EditText
+            android:layout_marginRight="18dp"
+            android:layout_marginLeft="18dp"
+            android:background="@null"
+            android:id="@+id/chepai"
+            android:layout_centerInParent="true"
+            android:hint="车牌号码"
+            android:textSize="15sp"
+            android:textColorHint="#999"
+            android:layout_width="match_parent"
+            android:layout_height="45dp" />
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/haomaiv"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/go_in"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_marginLeft="30dp"
+            android:background="#ddd"
+            android:layout_centerInParent="true"
+            android:drawableLeft="@drawable/me"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_marginTop="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="49dp">
+        <EditText
+            android:focusable="false"
+            android:clickable="false"
+            android:layout_marginRight="18dp"
+            android:layout_marginLeft="18dp"
+            android:background="@null"
+            android:id="@+id/chexing"
+            android:layout_centerInParent="true"
+            android:hint="车型"
+            android:textSize="15sp"
+            android:textColorHint="#999"
+            android:layout_width="match_parent"
+            android:layout_height="45dp" />
+        <ImageView
+            android:id="@+id/chexingiv"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/go_in"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_marginLeft="30dp"
+            android:background="#ddd"
+            android:layout_centerInParent="true"
+            android:drawableLeft="@drawable/me"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_marginTop="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="49dp">
+        <EditText
+
+            android:focusable="false"
+            android:clickable="false"
+            android:layout_marginRight="18dp"
+            android:layout_marginLeft="18dp"
+            android:background="@null"
+            android:id="@+id/chechang"
+            android:layout_centerInParent="true"
+            android:hint="车长"
+            android:textSize="15sp"
+            android:textColorHint="#999"
+            android:layout_width="match_parent"
+            android:layout_height="45dp" />
+
+        <ImageView
+            android:id="@+id/chechangiv"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/go_in"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_marginLeft="30dp"
+            android:background="#ddd"
+            android:layout_centerInParent="true"
+            android:drawableLeft="@drawable/me"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_below="@+id/tou9"
+        android:layout_marginTop="150dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/next"
+            android:text="完成"
+            android:background="@drawable/agree_shape"
+            android:textSize="16sp"
+            android:textColor="#fff"
+            android:layout_centerInParent="true"
+            android:layout_width="345dp"
+            android:layout_height="41dp" />
+    </RelativeLayout>
+</LinearLayout>

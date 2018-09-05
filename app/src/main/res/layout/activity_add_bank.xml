@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zhuye.huochebang.ui.Regeist1Activity">
+
+
+    <RelativeLayout
+        android:id="@+id/tou"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:scaleType="centerInside"
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:text="绑定银行卡"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/yinn"
+            android:layout_marginLeft="23dp"
+            android:gravity="center_vertical"
+            android:hint="银行 "
+            android:textSize="16sp"
+            android:textColorHint="#aaa"
+            android:layout_width="55dp"
+            android:layout_height="59dp" />
+        <TextView
+            android:id="@+id/bank"
+            android:layout_toRightOf="@+id/yinn"
+            android:layout_marginLeft="13dp"
+            android:gravity="center_vertical"
+            android:hint=""
+            android:textSize="16sp"
+            android:textColorHint="#666"
+            android:layout_width="wrap_content"
+            android:layout_height="59dp" />
+        <ImageView
+            android:visibility="gone"
+            android:layout_marginRight="15dp"
+           android:layout_marginTop="20dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:src="@drawable/go_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_marginLeft="15dp"
+            android:background="#ddd"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/yinn1"
+            android:layout_marginLeft="23dp"
+            android:gravity="center_vertical"
+            android:hint="卡号 "
+            android:textSize="16sp"
+            android:textColorHint="#aaa"
+            android:layout_width="55dp"
+            android:layout_height="59dp" />
+        <com.example.library.BandCardEditText
+            android:id="@+id/kahao"
+            android:lines="1"
+            android:textColorHint="#aaa"
+            android:singleLine="true"
+            android:background="@null"
+            android:layout_toRightOf="@+id/yinn1"
+            android:layout_marginLeft="13dp"
+            android:gravity="center_vertical"
+            android:hint="请输入银行卡号"
+            android:textSize="16sp"
+
+            android:layout_width="230dp"
+            android:layout_height="59dp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_marginLeft="15dp"
+            android:background="#ddd"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+    </RelativeLayout>
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/yinn2"
+        android:layout_marginLeft="23dp"
+        android:gravity="center_vertical"
+        android:hint="姓名 "
+        android:textSize="16sp"
+        android:textColorHint="#aaa"
+        android:layout_width="55dp"
+        android:layout_height="59dp" />
+        <EditText
+            android:id="@+id/name"
+            android:lines="1"
+
+            android:singleLine="true"
+            android:background="@null"
+            android:layout_toRightOf="@+id/yinn2"
+            android:layout_marginLeft="13dp"
+            android:gravity="center_vertical"
+            android:hint="请输入姓名 "
+            android:textSize="16sp"
+            android:textColorHint="#aaa"
+            android:layout_width="230dp"
+            android:layout_height="59dp" />
+
+</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_marginLeft="15dp"
+            android:background="#ddd"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+    </RelativeLayout>
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/yinn3"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:hint="身份证号 "
+        android:textSize="16sp"
+        android:textColorHint="#aaa"
+        android:layout_width="65dp"
+        android:layout_height="59dp" />
+        <EditText
+            android:id="@+id/zhenfen"
+            android:lines="1"
+            android:singleLine="true"
+            android:background="@null"
+            android:layout_toRightOf="@+id/yinn3"
+            android:layout_marginLeft="13dp"
+            android:gravity="center_vertical"
+            android:hint="请输入身份证号 "
+            android:textSize="16sp"
+            android:textColorHint="#aaa"
+            android:layout_width="230dp"
+            android:layout_height="59dp" />
+
+</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_marginLeft="15dp"
+            android:background="#ddd"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+    </RelativeLayout>
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/yinn5"
+        android:layout_marginLeft="23dp"
+        android:gravity="center_vertical"
+        android:hint="手机号 "
+        android:textSize="16sp"
+        android:textColorHint="#aaa"
+        android:layout_width="55dp"
+        android:layout_height="59dp" />
+        <EditText
+            android:id="@+id/phone"
+            android:lines="1"
+            android:singleLine="true"
+            android:background="@null"
+            android:layout_marginLeft="13dp"
+            android:gravity="center_vertical"
+            android:hint="请输入手机号 "
+            android:textSize="16sp"
+            android:textColorHint="#aaa"
+            android:layout_width="230dp"
+            android:layout_height="59dp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/yinn5"
+            android:layout_marginStart="14dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_marginLeft="15dp"
+            android:background="#ddd"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/yinn6"
+            android:layout_marginLeft="23dp"
+            android:gravity="center_vertical"
+            android:hint="验证码 "
+            android:textSize="16sp"
+            android:textColorHint="#aaa"
+            android:layout_width="55dp"
+            android:layout_height="59dp" />
+        <EditText
+            android:id="@+id/code"
+            android:lines="1"
+            android:singleLine="true"
+            android:background="@null"
+            android:layout_toRightOf="@+id/yinn6"
+            android:layout_marginLeft="13dp"
+            android:gravity="center_vertical"
+            android:hint="请输入验证码 "
+            android:textSize="16sp"
+            android:textColorHint="#aaa"
+            android:layout_width="230dp"
+            android:layout_height="59dp" />
+
+        <TextView
+            android:textColor="#0ba8ef"
+            android:gravity="center"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:id="@+id/huaquyanzhengma"
+            android:layout_centerInParent="true"
+            android:text="获取验证码"
+            android:layout_width="wrap_content"
+            android:layout_height="51dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_marginLeft="15dp"
+            android:background="#ddd"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:background="#ddd"
+            android:layout_centerInParent="true"
+            android:drawableLeft="@drawable/me"
+            android:layout_width="236dp"
+            android:layout_height="1dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/tou9"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/bangding"
+            android:text="立即绑定"
+            android:background="@drawable/btn_shape"
+            android:textSize="17sp"
+            android:textColor="#fff"
+            android:layout_centerInParent="true"
+            android:layout_width="345dp"
+            android:layout_height="50dp" />
+    </RelativeLayout>
+
+
+
+</LinearLayout>

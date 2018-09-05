@@ -1,0 +1,4 @@
+#Thu Aug 23 15:29:53 CST 2018
+base.0=E\:\\Youxun\\huochebang\\pay\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+renamed.0=classes.dex
+file.0=E\:\\Youxun\\huochebang\\pay\\build\\intermediates\\transforms\\dexMerger\\debug\\0\\classes.dex

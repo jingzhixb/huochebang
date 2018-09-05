@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:textColor="#999"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/delete_shape"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textSize="12sp"
+        android:id="@+id/fabu_name"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="粮食"/>
+</LinearLayout>

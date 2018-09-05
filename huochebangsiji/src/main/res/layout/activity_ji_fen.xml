@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/tou"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:scaleType="centerInside"
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="10dp"
+            android:text="VIP购买"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/jifen_quanxina"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="会员权限"
+            android:textColor="#fff"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="22dp"
+        android:layout_marginTop="22dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.zhuye.huochebangsiji.widget.RoundedCornerImageView
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher"
+            android:id="@+id/jifen_touxiang"
+            android:layout_width="56dp"
+            android:layout_height="56dp" />
+
+        <TextView
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="11dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="那么"
+            android:layout_toRightOf="@+id/jifen_touxiang"
+            android:id="@+id/jinfen_name"
+            android:textColor="#333"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_below="@+id/jinfen_name"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="11dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="积分 110"
+            android:layout_toRightOf="@+id/jifen_touxiang"
+            android:id="@+id/jinfen_jifenshu"
+            android:textColor="#666"
+            android:textSize="14sp"/>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_marginTop="12dp"
+        android:textSize="15sp"
+        android:textColor="#333"
+        android:text="会员充值"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/jinfen_rv"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_marginTop="12dp"
+            android:textSize="16sp"
+            android:textColor="#999"
+            android:text="支付金额:"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/jinfen_jine"
+            android:layout_marginTop="12dp"
+            android:textSize="18sp"
+            android:textColor="#f75152"
+            android:text=""
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="12dp"
+            android:textSize="16sp"
+            android:textColor="#666"
+            android:text="元"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/tou9"
+        android:layout_width="match_parent"
+        android:layout_height="49dp">
+        <Button
+            android:id="@+id/jifen_pay"
+            android:text="立即支付"
+            android:background="@drawable/tixian_shape"
+            android:textSize="16sp"
+            android:textColor="#fff"
+            android:layout_centerInParent="true"
+            android:layout_width="345dp"
+            android:layout_height="41dp" />
+    </RelativeLayout>
+</LinearLayout>

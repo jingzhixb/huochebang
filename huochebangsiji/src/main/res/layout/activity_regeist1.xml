@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/tou"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:scaleType="centerInside"
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:text="注册"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+
+
+
+    <com.ogaclejapan.smarttablayout.SmartTabLayout
+        android:layout_below="@+id/tou"
+        android:layout_marginLeft="90dp"
+        android:layout_marginRight="50dp"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:paddingStart="30dp"
+        android:id="@+id/viewpagertab"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:stl_indicatorAlwaysInCenter="false"
+        app:stl_indicatorGravity="bottom"
+        app:stl_indicatorColor="@color/colorPrimary"
+        app:stl_indicatorThickness="2dp"
+        app:stl_indicatorWidth="45dp"
+        app:stl_indicatorCornerRadius="2dp"
+        app:stl_dividerColor="#00ffffff"
+        app:stl_underlineColor="#00ffffff"
+        app:stl_defaultTabTextAllCaps="false"
+        app:stl_defaultTabTextColor="@color/colorPrimary"
+        app:stl_defaultTabTextSize="16sp"
+        app:stl_defaultTabTextHorizontalPadding="0dp"
+        app:stl_defaultTabTextMinWidth="120dp"
+        app:stl_distributeEvenly="false"
+        app:stl_clickable="true"
+        app:stl_titleOffset="100dp"
+        app:stl_drawDecorationAfterTab="false"
+        />
+
+
+    <android.support.v4.view.ViewPager
+       android:layout_below="@+id/viewpagertab"
+       android:id="@+id/vp"
+       android:layout_width="match_parent"
+       android:layout_height="300dp">
+   </android.support.v4.view.ViewPager>
+
+
+    <RelativeLayout
+        android:layout_below="@+id/vp"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/next"
+            android:text="下一步"
+            android:background="@drawable/btn_shape"
+            android:textSize="17sp"
+            android:textColor="#fff"
+            android:layout_centerInParent="true"
+            android:layout_width="232dp"
+            android:layout_height="41dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

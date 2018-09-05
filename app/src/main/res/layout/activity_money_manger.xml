@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zhuye.huochebang.ui.Regeist1Activity">
+
+
+    <RelativeLayout
+
+        android:gravity="center_horizontal"
+        android:id="@+id/tou"
+        android:layout_width="match_parent"
+        android:layout_height="216dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:scaleType="centerInside"
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/shouzhijilu"
+            android:layout_marginRight="14dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:text="收支记录"
+            android:textColor="#fff"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/yue"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="57dp"
+            android:text="余额"
+            android:textColor="#fff"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/yuezhen"
+            android:layout_below="@+id/yue"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:text="100"
+            android:textColor="#fff"
+            android:textSize="45sp" />
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:gravity="center_vertical"
+            android:layout_marginRight="18dp"
+            android:layout_marginLeft="15dp"
+            android:background="@null"
+            android:text="最近交易"
+            android:textSize="14sp"
+            android:textColor="#666"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/jiaoyijilu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/tou9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:background="@drawable/tixian_shape"
+            android:id="@+id/tixian"
+            android:text="提现"
+            android:textSize="16sp"
+            android:textColor="#fff"
+            android:layout_width="345dp"
+            android:layout_height="44dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</LinearLayout>

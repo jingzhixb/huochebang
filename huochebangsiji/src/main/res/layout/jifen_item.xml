@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="78dp"
+    android:layout_height="51dp"
+    android:id="@+id/jifen_root"
+    android:layout_marginTop="1dp"
+    android:layout_marginLeft="1dp"
+    android:background="@drawable/edit_shape"
+  >
+
+    <TextView
+        android:id="@+id/yueshu"
+        android:layout_marginTop="6dp"
+        android:textColor="#666666"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:text="一个月"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:id="@+id/jinemoney"
+        android:layout_marginTop="3dp"
+        android:textColor="#f75152"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:text="5元"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.zhuye.huochebangsiji.activity.Regeist3Activity">
+    <RelativeLayout
+        android:id="@+id/tou"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:scaleType="centerInside"
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:text="注册"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="40dp"
+        android:id="@+id/tou4"
+        android:layout_width="232dp"
+        android:layout_height="74dp"
+        android:layout_below="@+id/tou3"
+        android:layout_centerInParent="true"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@null"
+            android:hint="驾驶证"
+            android:textColor="#333"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/jishizheng"
+            android:layout_width="100dp"
+            android:layout_height="79dp"
+            android:layout_alignParentRight="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/photo" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tou4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:background="#ddd"
+            android:layout_centerInParent="true"
+            android:drawableLeft="@drawable/me"
+            android:layout_width="232dp"
+            android:layout_height="1dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+       android:layout_marginTop="10dp"
+        android:layout_width="232dp"
+        android:layout_height="74dp"
+        android:layout_below="@+id/tou3"
+        android:layout_centerInParent="true"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@null"
+            android:hint="行驶证"
+            android:textColor="#333"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/xingshizheng"
+            android:layout_width="100dp"
+            android:layout_height="79dp"
+            android:layout_alignParentRight="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/photo" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tou5"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tou4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:background="#ddd"
+            android:layout_centerInParent="true"
+            android:drawableLeft="@drawable/me"
+            android:layout_width="232dp"
+            android:layout_height="1dp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="232dp"
+        android:layout_height="74dp"
+        android:layout_below="@+id/tou3"
+        android:layout_centerInParent="true"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@null"
+            android:hint="营运证资质"
+            android:textColor="#333"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/yingyunzizhi"
+            android:layout_width="100dp"
+            android:layout_height="79dp"
+            android:layout_alignParentRight="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/photo" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tou4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:background="#ddd"
+            android:layout_centerInParent="true"
+            android:drawableLeft="@drawable/me"
+            android:layout_width="232dp"
+            android:layout_height="1dp" />
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="232dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tou3"
+        android:layout_centerInParent="true"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@null"
+            android:hint="油卡号"
+            android:textColor="#333"
+            android:textSize="13sp" />
+
+        <EditText
+            android:gravity="end"
+            android:textColorHint="#999"
+            android:textColor="#999"
+            android:textSize="14sp"
+            android:hint="请输入油卡号"
+            android:layout_marginTop="20dp"
+            android:background="@null"
+            android:id="@+id/youkahao"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/photo" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tou4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:background="#ddd"
+            android:layout_centerInParent="true"
+            android:drawableLeft="@drawable/me"
+            android:layout_width="232dp"
+            android:layout_height="1dp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="232dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tou3"
+        android:layout_centerInParent="true"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@null"
+            android:hint="车辆信息"
+            android:textColor="#333"
+            android:textSize="13sp" />
+
+        <TextView
+            android:gravity="end"
+            android:textColorHint="#999"
+            android:textColor="#999"
+            android:textSize="14sp"
+            android:text="请选择"
+            android:layout_marginTop="20dp"
+            android:background="@null"
+            android:id="@+id/xuanze"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/photo" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/next"
+            android:text="完成"
+            android:background="@drawable/btn_shape"
+            android:textSize="17sp"
+            android:textColor="#fff"
+            android:layout_centerInParent="true"
+            android:layout_width="232dp"
+            android:layout_height="41dp" />
+    </RelativeLayout>
+</LinearLayout>

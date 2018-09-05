@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/tou"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:scaleType="centerInside"
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:text="个人资料"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="16dp"
+       >
+
+        <RelativeLayout
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+            <TextView
+                android:layout_marginTop="20dp"
+                android:textColor="#999999"
+                android:textSize="14sp"
+                android:text="头像"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <com.zhuye.huochebanghuozhu.widget.RoundedCornerImageView
+                android:id="@+id/person_detail_touxiang"
+                android:layout_alignParentRight="true"
+                android:scaleType="centerCrop"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="49dp">
+            <TextView
+                android:textColor="#999999"
+                android:textSize="14sp"
+                android:text="昵称"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:lines="1"
+                android:gravity="end"
+                android:background="@null"
+                android:textColor="#666666"
+                android:textSize="14sp"
+                android:layout_alignParentRight="true"
+                android:id="@+id/person_name"
+                android:text="stmingziring"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:gravity="center_vertical">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="联系方式"
+                android:textColor="#999999"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/lianxi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:background="@null"
+                android:gravity="end"
+                android:text="18岁"
+                android:textColor="#666666"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/golianxi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/go_in" />
+        </RelativeLayout>
+
+        <View
+            android:background="#aaa"
+            android:layout_width="match_parent"
+            android:layout_height="1dp">
+
+        </View>
+
+        <RelativeLayout
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="49dp">
+            <TextView
+                android:textColor="#999999"
+                android:textSize="14sp"
+                android:text="所在地"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:visibility="gone"
+                android:layout_marginRight="5dp"
+                android:drawableRight="@drawable/personal_pull_down"
+                android:id="@+id/sheng"
+                android:layout_toLeftOf="@+id/shi"
+                android:gravity="center"
+                android:background="@null"
+                android:textColor="#666666"
+                android:textSize="14sp"
+                android:text="河南省"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/shi"
+                android:gravity="center"
+                android:background="@null"
+                android:textColor="#666666"
+                android:textSize="14sp"
+                android:layout_alignParentRight="true"
+                android:text="郑州市"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="49dp">
+            <TextView
+                android:textColor="#999999"
+                android:textSize="14sp"
+                android:text="车牌号"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:lines="1"
+                android:gravity="end"
+                android:background="@null"
+                android:textColor="#666666"
+                android:textSize="14sp"
+                android:layout_alignParentRight="true"
+                android:id="@+id/chapaihao"
+                android:text=""
+                android:layout_width="100dp"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorPrimary"
+                android:id="@+id/bianjiziliao"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:text="编辑提交资料"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

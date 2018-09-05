@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="74dp">
+
+    <LinearLayout
+        android:id="@+id/item1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:textSize="14sp"
+            android:textColor="#bbb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="周一"
+            android:id="@+id/week"/>
+
+        <TextView
+            android:id="@+id/type"
+            android:textSize="15sp"
+            android:textColor="#666"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="周一"
+           />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/item1"
+        android:id="@+id/item2"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:textSize="12sp"
+            android:textColor="#bbb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="周一"
+            android:id="@+id/data"/>
+
+        <TextView
+            android:id="@+id/bank"
+            android:textSize="12sp"
+            android:textColor="#666"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="周一"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:textColor="#e43a3a"
+        android:textSize="20sp"
+        android:layout_marginRight="14dp"
+        android:gravity="center_vertical"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="1555"
+        android:id="@+id/money"
+        />
+</RelativeLayout>

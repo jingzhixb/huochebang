@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zhuye.huochebanghuozhu.activity.LookXingChengActivity">
+
+        <!--<com.baidu.mapapi.map.MapView-->
+            <!--android:id="@+id/bai_mapView"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:clickable="true" />-->
+      <com.baidu.mapapi.map.TextureMapView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:id="@+id/bai_mapView"></com.baidu.mapapi.map.TextureMapView>
+
+</FrameLayout>

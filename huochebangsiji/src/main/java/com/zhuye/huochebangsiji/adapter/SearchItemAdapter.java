@@ -1,0 +1,31 @@
+package com.zhuye.huochebangsiji.adapter;
+
+import android.content.Context;
+import android.widget.TextView;
+
+import com.zhuye.huochebangsiji.R;
+import com.zhuye.huochebangsiji.base.BaseHolder;
+import com.zhuye.huochebangsiji.base.BaseRecycleAdapter;
+
+/**
+ * Created by Administrator on 2018/1/16 0016.
+ */
+
+public class SearchItemAdapter extends BaseRecycleAdapter {
+
+    public SearchItemAdapter(Context conn) {
+        super(conn);
+    }
+
+    @Override
+    protected int getResId() {
+        return R.layout.search_item;
+    }
+
+    @Override
+    protected void conver(BaseHolder holder, int position) {
+        TextView name = holder.getView(R.id.name);
+        name.setText((CharSequence) data.get(position));
+        //name.setText(((PeiSongBean.DataBean)data.get(position)).getType_name());
+    }
+}
